@@ -30,10 +30,37 @@
         .subtitle, .content{
             color: #ffffffe3
         }
+
+        .navbar{
+             position: -webkit-sticky; /* For Safari compatibility */
+            position: sticky;
+            top: 0;
+            z-index: 100; /
+        }
         /* Add other custom styles here */
     </style>
 </head>
 <body>
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <h1>AI-Driven Development</h1>
+                    
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="architecture.html">Architecture</a>
+                    <a class="navbar-item" href="frontend.html">Frontend</a>
+                    <a class="navbar-item" href="backend.html">Back-end</a>
+                    <a class="navbar-item" href="testing.html">Testing</a>
+                    <a class="navbar-item" href="codereview.html">Code Review</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <section class="hero is-medium hero-custom">
         <div class="hero-body">
             <div class="container">

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Activity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+        .navbar, .hero, .card {
+            background-color: #282828;
+        }
+        h1, h2, p {
+            color: #f0f0f0;
+        }
+        .hero-custom {
+            background-image: url('img/backend-hero.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:auto ;
+        }
+
+        .title{
+            color: white;
+            padding-bottom: 0%;
+        }
+
+        .subtitle, .content{
+            color: #ffffffe3
+        }
+
+        .navbar{
+             position: -webkit-sticky; /* For Safari compatibility */
+            position: sticky;
+            top: 0;
+            z-index: 100; /
+        }
+        /* Add other custom styles here */
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <h1>AI-Driven Development</h1>
+                    
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="architecture.html">Architecture</a>
+                    <a class="navbar-item" href="frontend.html">Frontend</a>
+                    <a class="navbar-item" href="backend.html">Back-end</a>
+                    <a class="navbar-item" href="testing.html">Testing</a>
+                    <a class="navbar-item" href="codereview.html">Code Review</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium hero-custom">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title hero-text">
+                   Backend
+                </h1>
+                <h2 class="subtitle hero-text">
+                    Use ChatGPT to quickly generate SQL queries based on a provided Schema
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Overview</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p> SQL is awesome but most of us are pretty bad at it. Let's have ChatGPT do it for us. We will be using a website called sql-practice.com to test the capabilities of ChatGPT when it comes to SQL. </p>
+
+                                    <p>We will provide the schema for the database below. There are multiple tables in their text format. Follow the instructions to get ChatGPT ready to create SQL based on this schema.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Schema</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>
+                                        patients:
+
+                                        patient_id
+                                        INT,
+
+
+                                        first_name
+                                        TEXT,
+
+
+                                        last_name
+                                        TEXT,
+
+
+                                        gender
+                                        CHAR(1),
+
+
+                                        birth_date
+                                        DATE,
+
+
+                                        city
+                                        TEXT,
+
+                                        province_id
+                                        CHAR(2),
+
+
+                                        allergies
+                                        TEXT,
+
+
+                                        height
+                                        INT,
+
+
+                                        weight
+                                        INT
+                                    </p>
+
+                                    <p>
+                                        admissions:
+
+
+                                        patient_id
+                                        INT,
+
+
+                                        admission_date
+                                        DATE,
+
+
+                                        discharge_date
+                                        DATE,
+
+
+                                        diagnosis
+                                        TEXT,
+
+                                        attending_doctor_id
+                                        INT
+
+
+                                    </p>
+
+                                    <p>
+                                        doctors:
+
+
+                                        doctor_id
+                                        INT,
+
+
+                                        first_name
+                                        TEXT,
+
+
+                                        last_name
+                                        TEXT,
+
+
+                                        specialty
+                                        TEXT
+
+
+                                    </p>
+
+                                    <p>
+                                        province_names:
+
+                                        province_id
+                                        CHAR(2),
+
+
+                                        province_name
+                                        TEXT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 1: Try Out <a href="https://www.sql-practice.com">sql-practice.com</a></p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    For a few minutes, get yourself acquainted with the website. When you get into the website you will see a large text field in the center with some instructions. Attempt some of the easy questions and maybe some medium if you’re feeling up to it. Once you use the website for about 5 minutes, move on to the next step.
+
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 2: Give ChatGPT Relevant Information</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>ChatGPT has no idea that we are going to want it to provide SQL. So, we have to tell it. In your prompt, start out by letting it know that we have a database with multiple tables in it and that we want it to provide SQL queries. Then, say “The Database Schema and its Tables are provided below:” followed by the database schema (copy and paste it in). </p>
+
+                                    <p>Now, lets check if ChatGPT understood the schema we provided. Give it the following prompt "Display the schema as tables"
+                                    </p>
+
+                                    <p>Compare the output to the website and see if ChatGPT understands the data we provided.</p>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 3: See How Far it Can Get</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Now that ChatGPT has all of the relevant information, complete as many questions as you can with it. This should be as simple as copying the prompt from sql-practice.com and pasting it into the text box on ChatGPT.</p>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 4: Analyze</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <ul>
+                                        <li>How did ChatGPT do?</li>
+                                        <li>What do you think of your experience using this as a tool for SQL?</li>
+                                        <li>Is there a better or easier way to set up ChatGPT to get it to provide accurate SQL queries?</li>
+                                        <li>What are the limitations of ChatGPT in generating SQL queries?</li>
+                                        <li>How does ChatGPT compare to other tools or methods for generating SQL queries?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Example Prompt</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Here is an example prompt you can use: </p>
+                                    <p>Here is a schema for a database with 4 tables:</p>
+                                    <p>patients: patient_id INT, first_name TEXT, last_name TEXT, gender CHAR(1), birth_date DATE, city TEXT, province_id CHAR(2), allergies TEXT, height INT, weight INT</p>
+
+                                    <p>admissions: patient_id INT, admission_date DATE, discharge_date DATE, diagnosis TEXT, attending_doctor_id INT</p>
+
+                                    <p>doctors: doctor_id INT, first_name TEXT, last_name TEXT, specialty TEXT</p>
+
+                                    <p>province_names: province_id CHAR(2), province_name TEXT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
+
+
+
+
+</body>
+</html>
