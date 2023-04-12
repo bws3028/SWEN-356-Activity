@@ -37,6 +37,11 @@
             top: 0;
             z-index: 100; /
         }
+
+        strong{
+            font-weight:900;
+            color: white;
+        }
         /* Add other custom styles here */
     </style>
 </head>
@@ -90,8 +95,11 @@
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-                              
-                                 </div>
+                                    <p>Provided is a set of requirements we want for a basic front-end single-page application called "CodeQuest." CodeQuest is an interactive and engaging platform for college software engineering students to participate in coding challenges, collaborate with peers, and track their progress.</p>
+
+                                    <p>However, we do not want you to create this all by yourself! We want you to use ChatGPT to do the above tasks! </p>
+
+                                </div>
                             </div>
                             
                         </div>
@@ -110,7 +118,16 @@
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-                                    
+                                    <p>Requirements for the CodeQuest application:</p>
+                                    <ul>
+                                        <li>A responsive navigation bar with four menu items: Home, Challenges, Leaderboard, and Profile.</li>
+                                        <li>A hero section with a captivating tagline and a call-to-action button to start a coding challenge.</li>
+                                        <li>A Challenges section displaying a list of coding challenges, each with a brief description, difficulty level, and a button to attempt the challenge.</li>
+                                        <li>A Leaderboard section showcasing the top performers in the community, highlighting their scores and accomplishments.</li>
+                                        <li>A Profile section where users can view their progress, completed challenges, and badges earned.</li>
+                                        <li>A footer with social media icons, contact information, and copyright information. </li>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -123,13 +140,19 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 1:  </p>
+                                <p class="title is-4">Step 1: Navigate to ChatGPT and the Code Pen to display your created front-end
+ </p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-
+                                    <p>
+                                        ChatGPT: <a href="https://chat.openai.com">chat.openai.com</a> 
+                                    </p>
+                                    <p>
+                                        Create a codepen account and navigate to a new “pen” (this is where you will put any html and css for the page): <a href="https://codepen.io/pen/">codepen.io</a>
+                                    </p>
                                 </div>
                             </div>
                     
@@ -143,13 +166,18 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 2: </p>
+                                <p class="title is-4">Step 2: What to prompt for?</p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
+                                    <p>Next is to start the prompting process with ChatGPT. You should explain each of the requirements listed above and describe what types of items you want created (ie. html, css, overall theming, etc). Refer to the below example prompt if you are lost on what to prompt for.</p>
 
+                                    <p><strong>Experiment by requesting ChatGPT to use CSS Frameworks like Bootstrap, Bulma, Foundation, etc.</strong></p>
+
+                                    <p>******NOTE*****</p>
+                                    <p>If at any point GPT does not finish what it was outputting, just type “Continue” to have it continue from where it left off.</p>
                                  </div>
                             </div>
                     
@@ -163,13 +191,13 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 3: </p>
+                                <p class="title is-4">Step 3:  Paste into <a href="https://codepen.io/pen/">codepen.io</a> </p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-
+                                    Once you receive the generated code from ChatGPT, copy and paste the HTML, CSS, and JavaScript (if applicable) into the appropriate sections of your codepen.
                                  </div>
                             </div>
                     
@@ -183,7 +211,47 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 4: Analyze</p>
+                                <p class="title is-4">Step 4: Evaluate Front-end</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    Review the generated front-end to ensure it meets the requirements and looks visually appealing. Make any necessary adjustments to the code as needed.
+                                 </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 5: Iterate and continue to prompt </p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    If the generated code doesn't meet your expectations or you want to make further improvements, go back to ChatGPT and provide additional prompts. Iterate on the process until you are satisfied with the final result.
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 6: Analyze</p>
                             </div>
                         </div>
                         <div class="columns">
@@ -215,7 +283,8 @@
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-                                    
+                                    <p>Here is an example prompt you can use: </p>
+                                    <p>"ChatGPT, I need help creating the home page for a front-end single-page application called CodeQuest. CodeQuest is an interactive and engaging platform for college software engineering students to participate in coding challenges, collaborate with peers, and track their progress. The home page should include a responsive navigation bar with four menu items: Home, Challenges, Leaderboard, and Profile; a hero section with a captivating tagline and a call-to-action button to start a coding challenge; and a footer with social media icons, contact information, and copyright details. Please provide HTML and CSS code for this home page design, making sure the overall theming is modern, engaging, and gamified for college students."</p>
                                  </div>
                             </div>
                         </div>

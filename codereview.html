@@ -68,7 +68,7 @@
                    Code Review
                 </h1>
                 <h2 class="subtitle hero-text">
-                    Use ChatGPT to review your code before pushing it to main
+                    Use ChatGPT to perform code reviews
                 </h2>
             </div>
         </div>
@@ -90,7 +90,16 @@
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-                              
+                                    <p>Provided is uncommented code with some inefficiencies and semantic issues with variable naming. Rather than change the code (you’re not the one who pushed it), let’s evaluate it and provide comments for the developer that pushed the code. Use ChatGPT to identify issues in the code snippet below. Once issues are identified, let’s write some thoughtful comments about how the developer could improve the code (he’s new so let’s be nice). </p>
+                                    <p>Below is an implementation of FizzBuzz. The problem requires the implementation of a function that takes a positive integer as input and returns a sequence of strings that follow the rules of the FizzBuzz game.
+                                    </p>
+                                    <p>The rules of the game are as follows:</p>
+                                    <ul>
+                                        <li>For each number in the sequence from 1 to the input integer, if the number is divisible by 3, output the string "Fizz" instead of the number.</li>
+                                        <li>If the number is divisible by 5, output the string "Buzz" instead of the number.</li>
+                                        <li>If the number is both divisible by 3 and 5, output the string "FizzBuzz" instead of the number.</li>
+                                        <li>If the number is not divisible by either 3 or 5, output the number as a string.</li>
+                                    </ul>
                                  </div>
                             </div>
                             
@@ -104,13 +113,27 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Frontend System Description</p>
+                                <p class="title is-4">Unoptomized Code</p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-                                    
+                                    <code><pre>
+def fb(numba):
+r = ""
+for i in range(1, numba+1):
+        if i % 3 == 0 and i % 5 == 0:
+                r += "FizzBuzz"
+        elif i % 3 == 0:
+                r += "Fizz"
+        elif i % 5 == 0:
+                r += "Buzz"
+        else:
+                r += str(i)
+return r
+
+                                    </pre></code>
                                 </div>
                             </div>
                         </div>
@@ -123,13 +146,13 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 1:  </p>
+                                <p class="title is-4">Step 1: Analyze the Code</p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-
+                                    Take a moment to analyze the code snippet above. Write down your initial thoughts and observations about the code. Identify areas where improvements can be made in terms of efficiency, readability, and code structure.
                                 </div>
                             </div>
                     
@@ -143,13 +166,13 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 2: </p>
+                                <p class="title is-4">Step 2: Have ChatGPT Do it For You Instead</p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-
+                                    Copy the code snippet and ask ChatGPT to give it a code review.   Use ChatGPT to assist you in identifying specific issues with the code snippet. Ask it to look for any errors and inefficiencies within the code.
                                  </div>
                             </div>
                     
@@ -163,13 +186,13 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Step 3: </p>
+                                <p class="title is-4">Step 3: Comment the Code</p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-
+                                    Let’s come up with some thoughtful comments to help the new developer understand the issues you've identified. You can either guide ChatGPT through the comments you want it to add, or let it figure it out itself. (Try both, its typically the best approach as the developer and the AI fill in each others gaps in knowledge)
                                  </div>
                             </div>
                     
@@ -177,6 +200,27 @@
                     </div>
                 </div>
             </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 4: Create a Message to Send Back to the Junior Dev</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    So we’ve figured out that the developer that wrote this messed up. Instead of creating our own response to the pull request, tell ChatGPT to critique the code and generate a kind response. Or, if you find this to be too egregious of a mistake, maybe a hostile response is required... up to you!
+                                 </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="column is-full">
                 <div class="card">
@@ -209,13 +253,40 @@
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4">Example Prompt</p>
+                                <p class="title is-4">Example Prompts</p>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
                                 <div class="content">
-                                    
+                                    <p>Provide Context:</p>
+                                    <p>I am providing you with code that I believe to be unoptomized. This is written in python. This code should follow these rules:</p>
+                                    <p>Below is an implementation of FizzBuzz. The problem requires the implementation of a function that takes a positive integer as input and returns a sequence of strings that follow the rules of the FizzBuzz game.
+                                    </p>
+                                    <p>The rules of the game are as follows:</p>
+                                    <ul>
+                                        <li>For each number in the sequence from 1 to the input integer, if the number is divisible by 3, output the string "Fizz" instead of the number.</li>
+                                        <li>If the number is divisible by 5, output the string "Buzz" instead of the number.</li>
+                                        <li>If the number is both divisible by 3 and 5, output the string "FizzBuzz" instead of the number.</li>
+                                        <li>If the number is not divisible by either 3 or 5, output the number as a string.</li>
+                                    </ul>
+
+                                    <p>Here is the code: **provide code**</p>
+
+                                    <p>------</p>
+
+                                    <p>Find Errors and/or Inefficiencies:</p>
+                                    <p>Look through the code and find any errors or inefficiencies</p>
+
+                                    <p>------</p>
+
+                                    <p>Comment the Code:</p>
+                                    <p>Add comments to the code that explains why the code is wrong or inneficient. Write the comment so that is easily understood by a new developer.</p>
+
+                                    <p>------</p>
+
+                                    <p>Respond to Developer:</p>
+                                    <p>Write a message to the developer that wrote this code explaining why it is incorrect or inneficient. Make this response hostile but professional as they're mistake ended up costing the company $400,000.</p>
                                  </div>
                             </div>
                         </div>
