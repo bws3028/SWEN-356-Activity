@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Activity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+        .navbar, .hero, .card {
+            background-color: #282828;
+        }
+        h1, h2, p {
+            color: #f0f0f0;
+        }
+        .hero-custom {
+            background-image: url('img/frontend-hero.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:auto ;
+        }
+
+        .title{
+            color: white;
+            padding-bottom: 0%;
+        }
+
+        .subtitle, .content{
+            color: #ffffffe3
+        }
+
+        .navbar{
+             position: -webkit-sticky; /* For Safari compatibility */
+            position: sticky;
+            top: 0;
+            z-index: 100; /
+        }
+        /* Add other custom styles here */
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <h1>AI-Driven Development</h1>
+                    
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="architecture.html">Architecture</a>
+                    <a class="navbar-item" href="frontend.html">Frontend</a>
+                    <a class="navbar-item" href="backend.html">Back-end</a>
+                    <a class="navbar-item" href="testing.html">Testing</a>
+                    <a class="navbar-item" href="codereview.html">Code Review</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium hero-custom">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title hero-text">
+                   Testing
+                </h1>
+                <h2 class="subtitle hero-text">
+                    Use ChatGPT to quickly generate unit tests and find errors within code
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Overview</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p> SQL is awesome but most of us are pretty bad at it. Let's have ChatGPT do it for us. We will be using a website called sql-practice.com to test the capabilities of ChatGPT when it comes to SQL. </p>
+
+                                    <p>We will provide the schema for the database below. There are multiple tables in their text format. Follow the instructions to get ChatGPT ready to create SQL based on this schema.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Faulty Python Code</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+<code><pre># Function 1: Simple - Add two numbers together and return the result
+   def add_numbers(a, b):
+         result = a - b
+         return result
+   
+   # Function 2: Simple - Calculate the area of a rectangle given its width and height
+   def rectangle_area(width, height):
+         area = width * height / 2
+         return area
+   
+   # Function 3: Medium complexity - Return the factorial of a given number
+   def factorial(n):
+         if n == 0:
+            return 1
+         else:
+            return n * factorial(n + 1)
+   
+   # Function 4: Medium complexity - Find the largest number in a list of integers
+   def find_largest(numbers):
+         largest = float('inf')
+         for number in numbers:
+            if number > largest:
+               largest = number
+         return largest
+   
+   # Function 5: Complex - Calculate the sum of all even Fibonacci numbers up to the given limit
+   def even_fibonacci_sum(limit):
+         a, b = 0, 1
+         sum_even = 0
+         while a < limit:
+            a, b = b, a + b
+            if a % 2 == 1:
+               sum_even += a
+         return sum_even
+   
+   # Function 6: Complex - Determine if a number is a palindrome
+   def is_palindrome(number):
+         str_num = str(number)
+         length = len(str_num)
+         for i in range(length // 2):
+            if str_num[i] != str_num[length - 1 - i]:
+               return False
+         return True</pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 1: Run The Code In <a href="https://trinket.io/embed/python3/a5bd54189b">Trinket Python Interpreter</a></p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    First, let's see what the code currently does. Copy and paste it into the online interpreter and run it.
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 2: Actually Doing Test-Driven Development</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    Clearly, the code is wrong. Lets imagine you're working for a really annoying manager that requires tests for even the most trivial functions. 
+                                    Unfortunately, that means writing tests even for an add function! We don't want to do that, so lets have ChatGPT do it.
+                                    Tell ChatGPT that you are providing it with python code. In the same prompt, paste in the python code.
+                                    After it has processed the code, tell it to generate a suite of unit tests. Each function should have 4 tests.
+                                    Now copy and paste the code into the <a href="https://trinket.io/embed/python3/a5bd54189b">Trinket Python Interpreter</a> and run it.
+                                 </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 3: Fix The Code</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    Well now we know that we were right when we said the code is wrong. It's sadly time to fix it. 
+                                    Tell ChatGPT to find the bugs in the code and fix it. Have it provide a description for each of the bugs.
+                                    Copy and paste the fixed code into the <a href="https://trinket.io/embed/python3/a5bd54189b">Trinket Python Interpreter</a> and run it.
+                                    Hopefully it passes all of th tests already written.
+                                 </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 4: Analyze</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <ul>
+                                        <li>How did ChatGPT do?</li>
+                                        <li>What do you think of your experience using this as a tool for testing?</li>
+                                        <li>Is there a better or easier way to set up ChatGPT to get it to provide accurate testing suites?</li>
+                                        <li>What are the limitations of ChatGPT in generating testing suites and fixing code?</li>
+                                        <li>How does ChatGPT compare to other tools or methods for testing code?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Example Prompt</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Here is python code. Do not fix it. Create 4 unit tests for each function. Run all of the unit tests. Here is the code:</p>
+                                    <p>**provide code**</p>
+                                    <br/>
+                                    <p>Fix the errors within these functions:</p>
+                                    <p>**provide code**</p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+               <div class="card">
+                   <div class="card-content">
+                       <div class="media">
+                           <div class="media-content">
+                               <p class="title is-4">Issues With The Provided Code</p>
+                           </div>
+                       </div>
+                       <div class="columns">
+                           <div class="column">
+                               <div class="content">
+                                   <ul>
+                                    <li>Function 1 - Logical issue: subtraction instead of addition</li>
+                                    <li>Function 2 - Logical issue: division by 2 is incorrect for calculating the area of a rectangle</li>
+                                    <li>Function 3 - Logical issue: n + 1 should be n - 1</li>
+                                    <li>Function 4 - Logical issue: initial value should be set to negative infinity instead of positive infinity</li>
+                                    <li>Function 5 - Logical issue: should check for even numbers (a % 2 == 0)</li>
+                                    <li>Function 6 - Logical issue: should check for equality instead of inequality
+                                       return False</li>
+                                   </ul>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </section>
+
+   </body>
+</html>
