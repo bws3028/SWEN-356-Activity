@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Activity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+        .navbar, .hero, .card {
+            background-color: #282828;
+        }
+        h1, h2, p {
+            color: #f0f0f0;
+        }
+        .hero-custom {
+            background-image: url('img/architecture-hero.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:auto ;
+        }
+
+        .title{
+            color: white;
+            padding-bottom: 0%;
+        }
+
+        .subtitle, .content{
+            color: #ffffffe3
+        }
+        /* Add other custom styles here */
+    </style>
+</head>
+<body>
+    <section class="hero is-medium hero-custom">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title hero-text">
+                   Architecture
+                </h1>
+                <h2 class="subtitle hero-text">
+                    Develop and document architecure efficiently with ChatGPT
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Overview</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    Provided is a system description. With this description, we want you to create a system architecure document. The following components should be included with the document.
+                                    <ul>
+                                        <li>System Overview</li>
+                                        <li>List of Components with Component Descriptions</li>
+                                        <li>Class Diagram</li>
+                                        <li>Sequence Diagram</li>
+                                        <li>Architecture Suggestions</li>
+                                    </ul>
+                                     However, we don't want you to write the document yourself. Let's have ChatGPT help.
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">System Description</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Introducing "PlantBuddy," a user-friendly web application designed to help gardening enthusiasts track and manage their plants. This simple yet powerful application allows users to create a virtual representation of their garden or indoor plants, monitor their progress, and receive timely reminders for watering and fertilizing.</p>
+
+                                    <p>PlantBuddy provides an easy-to-navigate interface, where users can add plants to their virtual garden, along with relevant details such as plant type, planting date, and preferred growing conditions. The application offers a built-in library of common plant species, with images and care instructions to guide users in nurturing their plants. Additionally, users can upload their plant photos and journal their gardening experiences.</p>
+
+                                    <p>With PlantBuddy's customizable notification system, users receive reminders for essential plant care tasks, such as watering, fertilizing, and pruning. The application also provides an overview of weather forecasts to help users plan their gardening activities accordingly.</p>
+
+                                    <p>PlantBuddy is the perfect companion for both novice and experienced gardeners, offering a seamless way to manage and optimize plant care, ensuring lush, thriving gardens and indoor spaces.</p>
+                                </div>
+                            </div>
+                            <
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 1: Create A System Overview</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    A System Overview is a brief description of the overall system. It should briefly discuss what the system will include. It only needs 4-5 sentences.
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 2: What Components Should Be Created?</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    Now lets generate a list of components and descriptions for these components. If you have any ideas to guide ChatGPT, feel free to put them in! Once it generates the components and the descriptions for what they do, read over them and see if it makes sense. If it does, move on. If not, think about where the AI went wrong and what can be improved. Then, just tell it where it went wrong and have it re-generate the components and their descriptions with your guidance!
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 3: Diagrams - No More LucidChart</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Diagrams are time consuming. Lets have ChatGPT generate some for us. We are going to use a fairly unkown diagraming language called Mermaid Script. This allows us to "code" diagrams. Ask ChatGPT to create a class diagram and a sequence diagram for your system using Mermaid Script. Make sure you tell it to use detailed action verbs for the connections between components.</p>
+                                    
+                                    <p>Once ChatGPT has finished generating the mermaid script go to the Mermaid Script Live editor and paste in the script to see what diagrams you've generated:</p>
+
+                                    <li><a href="https://mermaid.live/" target="_blank">Mermaid Live Editor</a></li>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 4: Architecural Analysis</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Lets now analyze the acrhitecture that we have generated. Well, lets have ChatGPT do it. Ask ChatGPT to write some suggestions to improve the current architecture.</p>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Step 5: Putting It All Together</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Finally, we have to put the entire document together. Ask ChatGPT to make an entire architecural document with each of the sections.</p>
+
+                                    <p>If you want the document to look nice, have it use markdown (but also specify to print the markdown characters aswell)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Example Prompt</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="content">
+                                    <p>Here is an example prompt you can use: </p>
+                                    <p>
+                                        I need to create an architectural document for a software system. This document should include a system overview, a list of components with component descriptions, a class diagram using mermaid script with descriptive words for the connections, a sequence diagram using mermaid script, and suggestions to improve the architecture. Here is the system decription:</p>
+                                        <p>
+                                        Introducing "PlantBuddy," a user-friendly web application designed to help gardening enthusiasts track and manage their plants. This simple yet powerful application allows users to create a virtual representation of their garden or indoor plants, monitor their progress, and receive timely reminders for watering and fertilizing.</p>
+                                        <p>
+                                        PlantBuddy provides an easy-to-navigate interface, where users can add plants to their virtual garden, along with relevant details such as plant type, planting date, and preferred growing conditions. The application offers a built-in library of common plant species, with images and care instructions to guide users in nurturing their plants. Additionally, users can upload their plant photos and journal their gardening experiences.</p>
+                                        <p>
+                                        With PlantBuddy's customizable notification system, users receive reminders for essential plant care tasks, such as watering, fertilizing, and pruning. The application also provides an overview of weather forecasts to help users plan their gardening activities accordingly.</p>
+                                        <p>
+                                        PlantBuddy is the perfect companion for both novice and experienced gardeners, offering a seamless way to manage and optimize plant care, ensuring lush, thriving gardens and indoor spaces. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
+
+
+
+
+</body>
+</html>
