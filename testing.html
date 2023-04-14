@@ -152,7 +152,7 @@
          str_num = str(number)
          length = len(str_num)
          for i in range(length // 2):
-            if str_num[i] != str_num[length - 1 - i]:
+            if str_num[i] == str_num[length - 1 - i]:
                return False
          return True</pre></code>
                                 </div>
@@ -295,8 +295,7 @@
                                     <li>Function 3 - Logical issue: n + 1 should be n - 1</li>
                                     <li>Function 4 - Logical issue: initial value should be set to negative infinity instead of positive infinity</li>
                                     <li>Function 5 - Logical issue: should check for even numbers (a % 2 == 0)</li>
-                                    <li>Function 6 - Logical issue: should check for equality instead of inequality
-                                       return False</li>
+                                    <li>Function 6 - Logical issue: should check for inequality instead of equality</li>
                                    </ul>
                                 </div>
                            </div>
